@@ -30,7 +30,7 @@
 <body>
 <div id="app-view">
 <!-- Sign in  -->
-    <div class="container sign-in">
+    <div class="container sign-in pages">
         <div class="col-sm-7 col-md-7 col-lg-7">
             <div class="panel panel-primary">
                 <div class="panel-heading" id="sign-in">
@@ -39,7 +39,7 @@
                             <input type="text" id="login-text" class="form-control input-sm" placeholder="User Name">
 
                             <span class="input-group-btn">
-                                <button class="btn btn-warning btn-sm" id="login">Login</button>
+                                <a class="btn btn-warning btn-sm" id="login" href='#chat-room'>Login</a>
                             </span>
                         </div>
                 </div>
@@ -47,7 +47,7 @@
         </div>
     </div>
     <!-- Chat page -->
-    <div class="container" id="chat-room">
+    <div class="container pages" id="chat-room">
         <div class="row">
             <div class="col-sm-7 col-md-7 col-lg-7">
                 <div class="panel panel-primary">
@@ -77,16 +77,6 @@
                         </ul>
                     </div>
 
-            <!--         <div class="panel-footer">
-                        <div class="input-group">
-                            <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here...">
-                            <span class="input-group-btn">
-                                <button class="btn btn-warning btn-sm" id="btn-chat">
-                                    Send</button>
-                            </span>
-                        </div>
-                    </div> -->
-
                     <div class="panel-footer">
                         <div class="input-group">
                             <input type="text" id="chat-box" class="form-control input-sm" placeholder="Type new message here...">
@@ -94,17 +84,8 @@
                             <span class="input-group-btn">
                                 <button class="btn btn-warning btn-sm" id="submit">Send</button>
                             </span>
-
                         </div>
                     </div>
-        <!--             <div id="text-submit">
-                        <div>
-                            <input type="text" id="chat-box">
-                        </div>
-                    </div>
-                    <div class="submit">
-                        <input type="submit" id="" value="SUBMIT">
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -128,7 +109,7 @@
     <script src="scripts/jqBootstrapValidation.js"></script>
     <script src="scripts/contact_me.js"></script>
     <!-- Custom Theme JavaScript -->
-    // <script src="scripts/agency.js"></script>
+    <script src="scripts/agency.js"></script>
 
     <script src="scripts/collections/ChatCollection.js"></script>
     <script src="scripts/models/ChatModel.js"></script>
