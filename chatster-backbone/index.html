@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+	<title>Chatster</title>
+
+	<!-- Bootstrap Core CSS -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="styles/agency.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="styles/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <!-- jQuery UI -->
+<!--     <link rel="stylesheet" href="js/jquery-ui-1.11.2.custom/jquery-ui.min.css"> -->
+
+
+
+</head>
+<body>
+<div id="app-view">
+<!-- Sign in  -->
+    <div class="container sign-in">
+        <div class="col-sm-7 col-md-7 col-lg-7">
+            <div class="panel panel-primary">
+                <div class="panel-heading" id="sign-in">
+                        Sign In
+                        <div class="input-group">
+                            <input type="text" id="login-text" class="form-control input-sm" placeholder="User Name">
+
+                            <span class="input-group-btn">
+                                <button class="btn btn-warning btn-sm" id="login">Login</button>
+                            </span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Chat page -->
+    <div class="container" id="chat-room">
+        <div class="row">
+            <div class="col-sm-7 col-md-7 col-lg-7">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                    <!-- <i class="icon-large icon-heart"></i> -->
+                        <i class="fa fa-comment-o" id="name-label"></i> Chatster
+                        <div class="btn-group pull-right">
+                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                <span class="fa fa-chevron-down"></span>
+                            </button>
+                            <ul class="dropdown-menu slidedown">
+                                <li class="status"><a href="#"><span class="fa fa-check-square-o">
+                                </span>Available</a></li>
+                                <li class="status"><a href="#"><span class="fa fa-times">
+                                </span>Busy</a></li>
+                                <li class="status"><a><span class="fa fa-clock-o"></span>
+                                    Away</a></li>
+                                <li class="divider status"></li>
+                                <li><a href="index.html"><span class="fa fa-power-off"></span>
+                                    Sign Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="chat">
+                            
+                        </ul>
+                    </div>
+
+            <!--         <div class="panel-footer">
+                        <div class="input-group">
+                            <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-warning btn-sm" id="btn-chat">
+                                    Send</button>
+                            </span>
+                        </div>
+                    </div> -->
+
+                    <div class="panel-footer">
+                        <div class="input-group">
+                            <input type="text" id="chat-box" class="form-control input-sm" placeholder="Type new message here...">
+
+                            <span class="input-group-btn">
+                                <button class="btn btn-warning btn-sm" id="submit">Send</button>
+                            </span>
+
+                        </div>
+                    </div>
+        <!--             <div id="text-submit">
+                        <div>
+                            <input type="text" id="chat-box">
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" id="" value="SUBMIT">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   <!-- jQuery UI -->
+<!--     // <script src="js/external/jquery/jquery.js"></script>
+    // <script src="js/jquery-ui.min.js"></script> -->
+	 <!-- jQuery -->
+
+
+    <!-- Dependencies -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="styles/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="scripts/jqBootstrapValidation.js"></script>
+    <script src="scripts/contact_me.js"></script>
+    <!-- Custom Theme JavaScript -->
+    // <script src="scripts/agency.js"></script>
+
+    <script src="scripts/collections/ChatCollection.js"></script>
+    <script src="scripts/models/ChatModel.js"></script>
+    <script src="scripts/views/LoginView.js"></script>
+    <script src="scripts/views/AppView.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
